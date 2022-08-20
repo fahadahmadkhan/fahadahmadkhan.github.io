@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agi's Bowl</title>
+
+        <link rel="icon" type="image/x-icon" href="./media/svg/favicon.svg">
+
+        <!------------ Styles ------------>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./dependencies/wow/css/animate.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+        <!------------ Styles ------------>
+
+        <!------------ Bootstrap 5 ------------>
+        <link rel="stylesheet" href="./dependencies/sweetalert2/sweetalert2.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+            defer></script>
+
+        <!------------ Bootstrap 5 ------------>
+
+        <!------------ jQuery ------------>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!------------ jQuery ------------>
+
+
+        <script src="./dependencies/wow/js/wow.min.js" defer></script>
+
+        <script src="./assets/app.js" defer></script>
+
+        <script src="./dependencies/sweetalert2/sweetalret2.min.js" async></script>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container-fluid home-container">
+
+            <div class="header-fixed" id="header-fixed">
+                <div class="header-inner container">
+                    <a href="./index.html">
+                        <img src="./media/svg/logo_header.svg" alt="" class="logo">
+                    </a>
+
+                    <nav>
+
+                        <button class="cart-btn" onclick="location.href = './pages/cart.html';">
+                            <img src="./media/svg/cart-color.svg" alt="">
+                            <div class="count">
+                                <h1>0</h1>
+                            </div>
+                        </button> <button type="button" class="build-bowl-btn" data-bs-toggle="modal"
+                            data-bs-target="#order-modal">
+                            Build Your Bowl
+                        </button>
+                        <button type="button" class="build-bowl-btn build-bowl-btn-small" data-bs-toggle="modal"
+                            data-bs-target="#order-modal">
+                            <img src="../media/svg/build-bowl-small.svg" alt="">
+                        </button>
+                    </nav>
+
+                </div>
+
+
+            </div>
+
+
+            <!------------ Banner ------------>
+
+            <section class="banner">
+
+                <!------------ Header ------------>
+
+                <header class="home-header container">
+                    <a href="./index.html">
+                        <img src="./media/svg/home/logo_main.svg" alt="">
+                    </a>
+                    <button class="cart-btn" onclick="location.href = './pages/cart.html';">
+                        <img src=" ./media/svg/cart.svg" alt="">
+                        <div class="count">
+                            <h1>0</h1>
+                        </div>
+                    </button>
+                </header>
+
+                <!------------ Header ------------>
+
+                <!------------ Banner Img ------------>
+
+
+
+                <div class="banner-content">
+
+                    <div class="content container">
+                        <div class="content-inner">
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s">Health is a relationship between you and your
+                                food. </h1>
+
+                            <h2 class="wow fadeInUp" data-wow-delay="0.4s">So let us Indulge in the delicacy of health!
+                            </h2>
+                            <button type="button" class="build-bowl-btn wow fadeInUp" data-wow-delay="0.4s"
+                                data-bs-toggle="modal" data-bs-target="#order-modal">
+                                Build Your Bowl
+                            </button>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="banner-img-main">
+                        <img class="banner-img wow pixZoomIn" src="./media/img/banner_img.png" alt="">
+                        <img class="banner-img-bg" src="./media/svg/home/home_banner_bg.svg" alt="">
+                    </div>
+                </div>
+
+
+
+                <!------------ Banner Img ------------>
+
+                <img class="banner-img-bg-light" src="./media/svg/home/home_banner_bg-light.svg" alt="">
+
+            </section>
+
+            <!------------ Banner ------------>
+
+            <!------------ About ------------>
+
+            <section class="about container-fluid">
+
+                <div class="about-inner container">
+                    <div class="about-img">
+                        <img src="./media/img/img_1.png" alt="" class="about-img1 wow fadeInUp" data-wow-delay="0.2s">
+
+                    </div>
+
+                    <div class="content">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.3s">About <span>Agi's Bowl</span></h1>
+                        <div class="about-img">
+                            <img src="./media/img/img_1.png" alt="" class="about-img2 wow fadeInUp"
+                                data-wow-delay="0.2s">
+
+                        </div>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">
+                            <i>“Eating healthy food fills your body with energy and nutrients. Imagine your cells
+                                smiling
+                                back at you and saying:
+                                “Thank you!”.” <br> – Karen Salmansohn</i>
+                        </p>
+                        <p class="wow fadeInUp" data-wow-delay="0.5s">That’s exactly what we at Agi’s Bowl are trying,
+                            To
+                            make your cells smile back at you!
+                            We bring you the rice bowl that india loves with a healthy twist and some lip smacking
+                            flavours!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+            <!------------ About ------------>
+
+            <!------------ Cards ------------>
+
+            <section class="cards container">
+                <div class="head">
+                    <h3 class="wow fadeInUp" data-wow-delay="0.2s">Benefits</h3>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.3s">Why Choose Agi's Bowl</h1>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="img-wrapper">
+                            <img src="./media/svg/home/card/quality-food.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h1>Quality Food</h1>
+                            <p>We believe in the best quality of ingredients.</p>
+                        </div>
+
+                    </div>
+                    <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="img-wrapper">
+                            <img src="./media/svg/home/card/quality-food.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h1>Fresh & Organic Vegetables</h1>
+                            <p>Fresh and organic produce sourced by our experts.</p>
+                        </div>
+
+                    </div>
+                    <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="img-wrapper">
+                            <img src="./media/svg/home/card/quality-food.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h1>Good Protein Content</h1>
+                            <p>Chicken and paneer provide good protein content.</p>
+                        </div>
+
+                    </div>
+                    <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="img-wrapper">
+                            <img src="./media/svg/home/card/quality-food.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h1>Lip Smacking Flavours</h1>
+                            <p>Flavours that will make you lick and tick till that last drop.</p>
+                        </div>
+
+                    </div>
+                    <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="img-wrapper">
+                            <img src="./media/svg/home/card/quality-food.svg" alt="">
+                        </div>
+                        <div class="content">
+                            <h1>Safe & Hygienic</h1>
+                            <p>We always make sure our environment is safe and hygienic.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!------------ Cards ------------>
+
+            <!------------ CallOut Container ------------>
+
+            <section class="call-out-container container-fluid">
+                <img src="./media/img/leaf.png" alt="" class="wow fadeInUp" data-wow-delay="0.4s">
+                <div class="call-out-inner container wow fadeInUp" data-wow-delay="0.1s">
+
+                    <div class="content">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">What are you waiting for?</h1>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.3s">Order Your Bowl Now!</h2>
+                    </div>
+
+
+                    <button type="button" class="build-bowl-btn wow fadeInUp" data-wow-delay="0.4s"
+                        data-bs-toggle="modal" data-bs-target="#order-modal">
+                        Build Your Bowl
+                    </button>
+
+                </div>
+
+
+
+
+
+
+            </section>
+
+            <!------------ CallOut Container ------------>
+
+            <!------------ Testimonial ------------>
+
+            <section class="testimonial-container container-fluid" style="display: none;">
+                <img src="./media/img/salad.png" alt="" class="testimonial_bg wow fadeInUp" data-wow-delay="0.2s">
+
+                <div class="testimonial-inner  container">
+                    <div class="head">
+                        <h3 class="wow fadeInUp" data-wow-delay="0.2s">Testimonials</h3>
+                        <h1 class="wow fadeInUp" data-wow-delay="0.3s"> Our Happy & Healthy Clients</h1>
+                    </div>
+
+
+                    <div class="testimonial-wrapper">
+
+                        <div class="wrapper-inner wow fadeInUp" data-wow-delay="0.3s">
+                            <div id="testimonial-slider" class="owl-carousel">
+
+
+                                <div class="testimonial">
+                                    <div class="head">
+                                        <div class="testimonial-pic">
+                                            <img src="./media/img/testimonials/pic1.png">
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="details">
+                                        <p class="description">
+                                            Superb! right from packaging to the very last bite!
+                                        </p>
+                                        <h2 class="title">Puneet Kataria</h2>
+
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="head">
+                                        <div class="testimonial-pic">
+                                            <img src="./media/img/testimonials/pic1.png">
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="details">
+                                        <p class="description">
+                                            Great taste accompanied by fresh and crunchy vegetables. Love it!
+                                        </p>
+                                        <h2 class="title">Ravi Khareta</h2>
+
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="head">
+                                        <div class="testimonial-pic">
+                                            <img src="./media/img/testimonials/pic1.png">
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="details">
+                                        <p class="description">
+                                            If you like rice, you’ll love this!
+                                        </p>
+                                        <h2 class="title">Deepak Khetan</h2>
+
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="head">
+                                        <div class="testimonial-pic">
+                                            <img src="./media/img/testimonials/pic1.png">
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="details">
+                                        <p class="description">
+                                            One of the best rice bowls i have had hands down.
+                                        </p>
+                                        <h2 class="title">Akshat Singh</h2>
+
+                                    </div>
+                                </div>
+                                <div class="testimonial">
+                                    <div class="head">
+                                        <div class="testimonial-pic">
+                                            <img src="./media/img/testimonials/pic1.png">
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="details">
+                                        <p class="description">
+                                            Their spreads and sauces are amazing. Interesting blend of flavours. All in
+                                            all
+                                            a very nicely done rice bowl.
+                                        </p>
+                                        <h2 class="title">Ankita Gupta</h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./media/img/testimonials/testimonial_img1.png" alt="" class="col-md-5 wow pixZoomIn">
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+            <!------------ Testimonial ------------>
+
+            <!------------ Footer ------------>
+
+            <footer class="footer-home">
+                <div class="footer-inner container">
+                    <h1 class="copyright">© 2022 AGI’s Bowl, All Rights Reserved</h1>
+                    <h1>Designed & Developed by <a href="https://www.linkedin.com/in/fahadahmad-khan/"
+                            target="_blank">Fahad.AK</a>
+                    </h1>
+                </div>
+            </footer>
+
+            <!------------ Footer ------------>
+
+            <!------------ Order Modal ------------>
+
+            <div class="order-modal modal fade" id="order-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h1>Order your Healthy Bowl</h1>
+                            <div></div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="head">
+
+                                <h1>₹359 (ext. Extra)</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <form action="" class="order-bowl">
+
+                                <div class="field-group base">
+                                    <div class="head">
+                                        <label for="quantity">Base <span>*</span> </label>
+                                    </div>
+                                    <p>Select any one of the following.</p>
+                                    <div class="accordion" id="accordion1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseAccordion1" aria-expanded="true"
+                                                    aria-controls="collapse1">
+                                                    Select Base
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAccordion1" class="accordion-collapse collapse show"
+                                                aria-labelledby="heading1" data-bs-parent="#accordion1">
+                                                <div class="accordion-body">
+                                                    <div class="form-check">
+                                                        <div class="option-wrapper">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="baseSelection" value="option1">
+                                                            <label class="form-check-label">
+                                                                White Rice
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <div class="option-wrapper">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="baseSelection" value="option2">
+                                                            <label class="form-check-label">
+                                                                Brown Rice
+                                                            </label>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="field-group">
+                                    <div class="head">
+                                        <label for="quantity">Spreads (Choose any three)<span>*</span></label>
+                                        <h1>Extra: <span>Rs. 21</span></h1>
+                                    </div>
+
+                                    <p>Select any three, more than three will be additional.</p>
+                                    <div class="accordion" id="accordion2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseAccordion2" aria-expanded="true"
+                                                    aria-controls="collapse2">
+                                                    Choose Spreads
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAccordion2" class="accordion-collapse collapse show"
+                                                aria-labelledby="heading2" data-bs-parent="#accordion2">
+                                                <div class="accordion-body">
+                                                    <div class="form-check">
+                                                        <div class="option-wrapper">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="baseSelection" value="option1">
+                                                            <label class="form-check-label">
+                                                                Option 1
+                                                            </label>
+                                                        </div>
+                                                        <!-- <span class="extra">Extra</span> -->
+
+
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <div class="option-wrapper">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="baseSelection" value="option2">
+                                                            <label class="form-check-label">
+
+                                                                Option 2
+
+                                                            </label>
+                                                        </div>
+                                                        <div class="quantity-count">
+
+                                                            <button type="button" id="minus"
+                                                                class="quantity-btn minus-btn" data-type="minus"
+                                                                data-field="quant[2]">
+                                                                -
+                                                            </button>
+
+
+
+                                                            <input class="quantity-val" type="number" id="quantity-val"
+                                                                min="1" max="3" value="1" readonly>
+
+
+
+                                                            <button type="button" id="plus"
+                                                                class="quantity-btn plus-btn" data-type="plus"
+                                                                data-field="quant[2]">
+                                                                +
+                                                            </button>
+
+                                                        </div>
+
+                                                        <!-- <span>Extra</span> -->
+
+
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <div class="option-wrapper">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="baseSelection" value="option3">
+                                                            <label class="form-check-label">
+                                                                Option 3
+                                                            </label>
+                                                        </div>
+                                                        <span class="extra">Extra</span>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </form>
+
+                            <div class="order-summary"></div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="model-footer-btn add-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ Order Modal ------------>
+
+
+        </div>
+
+    </body>
+
+</html>

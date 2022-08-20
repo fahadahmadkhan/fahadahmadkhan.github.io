@@ -1,0 +1,50 @@
+.header-fixed {
+  padding: 16px 0;
+  background: $white_color;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+  position: sticky;
+  transition: all 0.3s ease-in;
+  z-index: 100;
+  top: 0;
+  display: none;
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      .build-bowl-btn {
+        padding: 16px;
+        font-size: 14px;
+      }
+
+      .build-bowl-btn-small {
+        display: none;
+      }
+      .cart-btn {
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        .count {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $primary_color;
+          border-radius: 50%;
+          width: 26px;
+          height: 26px;
+          position: absolute;
+          right: -10px;
+          top: -8px;
+          border: 2px solid $white_color;
+          h1 {
+            color: $white_color;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
